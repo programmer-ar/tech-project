@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Énergies Renouvelables — Avenir Durable</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Animated Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Particle overlay -->
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">⚡ ÉnergieVerte</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#definition">Définition</a></li>
+      <li><a href="#energies">Énergies</a></li>
+      <li><a href="#chiffres">Chiffres</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="nav-toggle">☰</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <span class="hero-badge reveal">🌍 Pour un avenir durable</span>
+      <h1 class="hero-title reveal">
+        Énergies<br /><span class="gradient-text">Renouvelables</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Découvrez les sources d'énergie inépuisables qui façonnent le monde de demain — propres, durables et infinies.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#energies" class="btn-primary">Explorer les énergies</a>
+        <a href="#definition" class="btn-ghost">En savoir plus</a>
+      </div>
+    </div>
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- DÉFINITION -->
+  <section class="definition-section" id="definition">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Comprendre</span>
+        <h2>Qu'est-ce qu'une Énergie <span class="gradient-text">Renouvelable</span> ?</h2>
+      </div>
+      <div class="definition-grid">
+        <div class="definition-card reveal">
+          <div class="def-icon">♾️</div>
+          <h3>Définition</h3>
+          <p>
+            Les énergies renouvelables sont des sources d'énergie dont le renouvellement naturel est assez rapide pour qu'elles puissent être considérées comme inépuisables à l'échelle humaine. Elles proviennent de phénomènes naturels — soleil, vent, eau, chaleur terrestre, biomasse — et se régénèrent naturellement.
+          </p>
+        </div>
+        <div class="definition-card reveal">
+          <div class="def-icon">🌱</div>
+          <h3>Pourquoi sont-elles essentielles ?</h3>
+          <p>
+            Face aux défis du changement climatique et à l'épuisement des combustibles fossiles, les énergies renouvelables représentent la solution la plus viable pour assurer la sécurité énergétique mondiale tout en réduisant les émissions de CO₂ et en préservant notre planète.
+          </p>
+        </div>
+        <div class="definition-card reveal">
+          <div class="def-icon">⚡</div>
+          <h3>Avantages clés</h3>
+          <ul class="advantages-list">
+            <li>✅ Source inépuisable d'énergie</li>
+            <li>✅ Faibles émissions de gaz à effet de serre</li>
+            <li>✅ Réduction de la dépendance aux fossiles</li>
+            <li>✅ Création d'emplois locaux</li>
+            <li>✅ Coûts de production en baisse constante</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉNERGIES -->
+  <section class="energies-section" id="energies">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Catalogue</span>
+        <h2>Les Types d'Énergies <span class="gradient-text">Renouvelables</span></h2>
+      </div>
+
+      <!-- Énergie Solaire -->
+      <div class="energy-card reveal" data-color="#FFB800">
+        <div class="energy-visual solar-visual">
+          <div class="energy-icon-large">☀️</div>
+          <div class="energy-rings">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+          </div>
+        </div>
+        <div class="energy-info">
+          <div class="energy-number">01</div>
+          <h3>Énergie Solaire</h3>
+          <p class="energy-def">
+            <strong>Définition :</strong> L'énergie solaire est produite par la conversion du rayonnement électromagnétique du soleil en électricité (via des panneaux photovoltaïques) ou en chaleur (via des capteurs thermiques solaires).
+          </p>
+          <div class="energy-examples">
+            <h4>📌 Exemples concrets :</h4>
+            <ul>
+              <li><strong>Panneaux photovoltaïques résidentiels</strong> — Des maisons en Tunisie, en France et en Allemagne équipées de panneaux solaires produisent leur propre électricité.</li>
+              <li><strong>Centrale solaire de Noor (Maroc)</strong> — L'une des plus grandes centrales solaires au monde, générant 580 MW dans le désert de Ouarzazate.</li>
+              <li><strong>Calculatrices solaires</strong> — Exemple simple d'utilisation quotidienne de la conversion lumière → électricité.</li>
+              <li><strong>Satellites spatiaux</strong> — La Station Spatiale Internationale est alimentée à 100% par des panneaux solaires.</li>
+            </ul>
+          </div>
+          <div class="energy-stats">
+            <div class="stat"><span class="stat-num">1,000+</span><span class="stat-label">GW installés mondialement</span></div>
+            <div class="stat"><span class="stat-num">-90%</span><span class="stat-label">Coût depuis 2010</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Énergie Éolienne -->
+      <div class="energy-card reverse reveal" data-color="#00C9A7">
+        <div class="energy-visual wind-visual">
+          <div class="energy-icon-large">🌬️</div>
+          <div class="windmill-anim">
+            <div class="windmill-tower"></div>
+            <div class="windmill-blades" id="windmill">
+              <div class="blade b1"></div>
+              <div class="blade b2"></div>
+              <div class="blade b3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="energy-info">
+          <div class="energy-number">02</div>
+          <h3>Énergie Éolienne</h3>
+          <p class="energy-def">
+            <strong>Définition :</strong> L'énergie éolienne exploite la force cinétique du vent pour faire tourner des turbines, transformant l'énergie mécanique en électricité via un générateur. Elle peut être terrestre (onshore) ou offshore (en mer).
+          </p>
+          <div class="energy-examples">
+            <h4>📌 Exemples concrets :</h4>
+            <ul>
+              <li><strong>Parc éolien de Hornsea (Royaume-Uni)</strong> — Le plus grand parc éolien offshore au monde, avec une capacité de 1,2 GW, alimentant plus d'un million de foyers.</li>
+              <li><strong>Parc éolien de Sidi Daoud (Tunisie)</strong> — Premier parc éolien en Tunisie, situé sur le cap Bon avec 54 éoliennes.</li>
+              <li><strong>Éoliennes domestiques</strong> — Des petites turbines de 1 à 10 kW pour alimenter des fermes isolées.</li>
+              <li><strong>Danemark</strong> — Ce pays produit 50% de son électricité grâce au vent.</li>
+            </ul>
+          </div>
+          <div class="energy-stats">
+            <div class="stat"><span class="stat-num">837 GW</span><span class="stat-label">Capacité mondiale 2023</span></div>
+            <div class="stat"><span class="stat-num">50%</span><span class="stat-label">Mix énergétique danois</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Énergie Hydraulique -->
+      <div class="energy-card reveal" data-color="#0099FF">
+        <div class="energy-visual hydro-visual">
+          <div class="energy-icon-large">💧</div>
+          <div class="water-waves">
+            <div class="wave w1"></div>
+            <div class="wave w2"></div>
+            <div class="wave w3"></div>
+          </div>
+        </div>
+        <div class="energy-info">
+          <div class="energy-number">03</div>
+          <h3>Énergie Hydraulique</h3>
+          <p class="energy-def">
+            <strong>Définition :</strong> L'hydroélectricité exploite l'énergie potentielle et cinétique de l'eau en mouvement (rivières, chutes d'eau) pour faire tourner des turbines hydrauliques reliées à des générateurs électriques.
+          </p>
+          <div class="energy-examples">
+            <h4>📌 Exemples concrets :</h4>
+            <ul>
+              <li><strong>Barrage des Trois-Gorges (Chine)</strong> — La plus grande centrale hydroélectrique du monde avec 22,5 GW de capacité installée.</li>
+              <li><strong>Barrage Sidi Salem (Tunisie)</strong> — Principal barrage tunisien servant à la fois à l'irrigation et à la production d'énergie.</li>
+              <li><strong>Barrage d'Assouan (Égypte)</strong> — Produit 2,1 GW et alimente une grande partie de l'Égypte en électricité.</li>
+              <li><strong>Micro-centrales</strong> — Petites installations sur des ruisseaux pour alimenter des villages isolés.</li>
+            </ul>
+          </div>
+          <div class="energy-stats">
+            <div class="stat"><span class="stat-num">1ère</span><span class="stat-label">Source renouvelable mondiale</span></div>
+            <div class="stat"><span class="stat-num">16%</span><span class="stat-label">Électricité mondiale</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Énergie Géothermique -->
+      <div class="energy-card reverse reveal" data-color="#FF5733">
+        <div class="energy-visual geo-visual">
+          <div class="energy-icon-large">🌋</div>
+          <div class="geo-bubbles">
+            <div class="bubble bu1"></div>
+            <div class="bubble bu2"></div>
+            <div class="bubble bu3"></div>
+            <div class="bubble bu4"></div>
+          </div>
+        </div>
+        <div class="energy-info">
+          <div class="energy-number">04</div>
+          <h3>Énergie Géothermique</h3>
+          <p class="energy-def">
+            <strong>Définition :</strong> L'énergie géothermique exploite la chaleur naturelle stockée dans les profondeurs de la Terre (magma, roches chaudes, eaux souterraines chaudes) pour produire de l'électricité ou du chauffage direct.
+          </p>
+          <div class="energy-examples">
+            <h4>📌 Exemples concrets :</h4>
+            <ul>
+              <li><strong>Islande</strong> — 90% des foyers islandais sont chauffés par géothermie grâce à l'activité volcanique du pays.</li>
+              <li><strong>The Geysers (Californie, USA)</strong> — Le plus grand complexe géothermique du monde avec 1,5 GW de capacité.</li>
+              <li><strong>Hammam Boughrara (Tunisie)</strong> — Sources thermales naturelles utilisées pour le chauffage et le thermalisme.</li>
+              <li><strong>Pompes à chaleur géothermiques</strong> — Systèmes résidentiels qui utilisent la température stable du sol pour chauffer/refroidir les maisons.</li>
+            </ul>
+          </div>
+          <div class="energy-stats">
+            <div class="stat"><span class="stat-num">15 GW</span><span class="stat-label">Capacité mondiale installée</span></div>
+            <div class="stat"><span class="stat-num">90%</span><span class="stat-label">Foyers islandais chauffés</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Biomasse -->
+      <div class="energy-card reveal" data-color="#7BC67E">
+        <div class="energy-visual bio-visual">
+          <div class="energy-icon-large">🌿</div>
+          <div class="leaves-anim">
+            <div class="leaf l1">🍃</div>
+            <div class="leaf l2">🍃</div>
+            <div class="leaf l3">🍃</div>
+          </div>
+        </div>
+        <div class="energy-info">
+          <div class="energy-number">05</div>
+          <h3>Énergie Biomasse</h3>
+          <p class="energy-def">
+            <strong>Définition :</strong> La biomasse désigne l'ensemble des matières organiques d'origine végétale, animale ou fongique pouvant être converties en énergie via combustion, méthanisation ou fermentation pour produire chaleur, électricité ou biocarburants.
+          </p>
+          <div class="energy-examples">
+            <h4>📌 Exemples concrets :</h4>
+            <ul>
+              <li><strong>Biocarburants</strong> — L'éthanol produit à partir de canne à sucre au Brésil représente 27% de la consommation de carburant du pays.</li>
+              <li><strong>Biogaz agricole</strong> — Des exploitations agricoles en France et en Allemagne transforment les déjections animales en biogaz pour produire de l'électricité.</li>
+              <li><strong>Centrale de Gardanne (France)</strong> — Centrale thermique convertie à 100% en biomasse (bois), produisant 150 MW.</li>
+              <li><strong>Déchets ménagers</strong> — Des usines d'incinération en Suède brûlent des déchets pour chauffer 950 000 foyers.</li>
+            </ul>
+          </div>
+          <div class="energy-stats">
+            <div class="stat"><span class="stat-num">59%</span><span class="stat-label">Part renouvelable globale</span></div>
+            <div class="stat"><span class="stat-num">2,5 Mds</span><span class="stat-label">Personnes utilisent la biomasse</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Énergie Marémotrice -->
+      <div class="energy-card reverse reveal" data-color="#845EC2">
+        <div class="energy-visual tidal-visual">
+          <div class="energy-icon-large">🌊</div>
+          <div class="tidal-waves">
+            <div class="twave tw1"></div>
+            <div class="twave tw2"></div>
+          </div>
+        </div>
+        <div class="energy-info">
+          <div class="energy-number">06</div>
+          <h3>Énergie Marémotrice & Houlomotrice</h3>
+          <p class="energy-def">
+            <strong>Définition :</strong> L'énergie marémotrice exploite les variations du niveau de la mer dues aux marées (différence de hauteur d'eau), tandis que l'énergie houlomotrice capture l'énergie cinétique des vagues océaniques pour produire de l'électricité.
+          </p>
+          <div class="energy-examples">
+            <h4>📌 Exemples concrets :</h4>
+            <ul>
+              <li><strong>Usine marémotrice de la Rance (France)</strong> — Première et plus grande centrale marémotrice du monde (240 MW), en service depuis 1966 en Bretagne.</li>
+              <li><strong>Projet MeyGen (Écosse)</strong> — Premier parc de turbines marémotrices sous-marines au monde dans le Pentland Firth.</li>
+              <li><strong>Wave Energy Converters (Portugal)</strong> — Des bouées houlomotrices au large de Póvoa de Varzim convertissent les vagues en électricité.</li>
+              <li><strong>Sihwa (Corée du Sud)</strong> — Centrale marémotrice de 254 MW, la plus puissante au monde actuellement.</li>
+            </ul>
+          </div>
+          <div class="energy-stats">
+            <div class="stat"><span class="stat-num">500 GW</span><span class="stat-label">Potentiel marémoteur mondial</span></div>
+            <div class="stat"><span class="stat-num">1966</span><span class="stat-label">1ère centrale (La Rance)</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHIFFRES CLÉS -->
+  <section class="stats-section" id="chiffres">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Impact Mondial</span>
+        <h2>Les Renouvelables en <span class="gradient-text">Chiffres</span></h2>
+      </div>
+      <div class="stats-grid">
+        <div class="big-stat reveal">
+          <div class="big-stat-icon">🌍</div>
+          <div class="big-stat-num" data-target="30">0</div>
+          <div class="big-stat-suffix">%</div>
+          <div class="big-stat-label">de l'électricité mondiale produite par les renouvelables en 2023</div>
+        </div>
+        <div class="big-stat reveal">
+          <div class="big-stat-icon">💼</div>
+          <div class="big-stat-num" data-target="13">0</div>
+          <div class="big-stat-suffix">M</div>
+          <div class="big-stat-label">d'emplois créés dans le secteur des énergies renouvelables</div>
+        </div>
+        <div class="big-stat reveal">
+          <div class="big-stat-icon">📉</div>
+          <div class="big-stat-num" data-target="90">0</div>
+          <div class="big-stat-suffix">%</div>
+          <div class="big-stat-label">de réduction du coût du solaire photovoltaïque en 10 ans</div>
+        </div>
+        <div class="big-stat reveal">
+          <div class="big-stat-icon">🏭</div>
+          <div class="big-stat-num" data-target="3400">0</div>
+          <div class="big-stat-suffix">GW</div>
+          <div class="big-stat-label">de capacité renouvelable installée dans le monde en 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARAISON -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Analyse</span>
+        <h2>Renouvelables vs <span class="gradient-text">Fossiles</span></h2>
+      </div>
+      <div class="comparison-table reveal">
+        <div class="comp-header">
+          <div class="comp-cell comp-title">Critère</div>
+          <div class="comp-cell comp-green">⚡ Renouvelables</div>
+          <div class="comp-cell comp-red">🏭 Fossiles</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell">Disponibilité</div>
+          <div class="comp-cell comp-green">Inépuisable ♾️</div>
+          <div class="comp-cell comp-red">Limitée ⏳</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell">Émissions CO₂</div>
+          <div class="comp-cell comp-green">Quasi nulles ✅</div>
+          <div class="comp-cell comp-red">Très élevées ❌</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell">Coût long terme</div>
+          <div class="comp-cell comp-green">En baisse 📉</div>
+          <div class="comp-cell comp-red">Volatile & croissant 📈</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell">Impact sur la santé</div>
+          <div class="comp-cell comp-green">Neutre à positif 🌿</div>
+          <div class="comp-cell comp-red">Pollution de l'air ☠️</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-cell">Sécurité énergétique</div>
+          <div class="comp-cell comp-green">Locale & autonome 🏡</div>
+          <div class="comp-cell comp-red">Dépendante des imports 🌐</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2>Nous <span class="gradient-text">Contacter</span></h2>
+      </div>
+      <div class="contact-card reveal">
+        <div class="contact-icon">📧</div>
+        <p class="contact-intro">Pour toute question, suggestion ou collaboration sur le thème des énergies renouvelables, n'hésitez pas à nous écrire :</p>
+        <a href="mailto:mouhamedaymentroudi@gmail.com" class="contact-email">
+          mouhamedaymentroudi@gmail.com
+        </a>
+        <p class="contact-note">Nous répondons dans un délai de 24 à 48 heures. 🌱</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">⚡ ÉnergieVerte</div>
+      <p class="footer-tagline">Ensemble, construisons un avenir propre et durable.</p>
+      <div class="footer-links">
+        <a href="#hero">Accueil</a>
+        <a href="#definition">Définition</a>
+        <a href="#energies">Énergies</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-authors">Med Aymen Troudi, Nour El Islem Sallem, Yosr Hadj Kacem</p>
+      <p class="footer-copy">© 2025 — Tous droits réservés. Fait avec 💚 pour la planète.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
